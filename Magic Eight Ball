@@ -1,0 +1,40 @@
+// Magic Eight Ball
+let userName = '';
+userName ? console.log(`Hello, ${userName}!`)
+: console.log('Hello!');
+
+const userQuestion = console.log('');
+
+// Allows numbers to generate 0-7, math.random only generates 0-1 where you must multiple by what your end to be
+randomNumber = Math.floor(Math.random() * 8);
+
+let eightball = '';
+
+// Assigns each number generated an output
+switch (randomNumber) {
+  case 0:
+    console.log('It is certain');
+    break;
+  case 1:
+    console.log('It is decidedly so');
+    break;
+  case 2:
+    console.log('Reply hazy try again');
+    break;
+  case 3:
+    console.log('Cannont predict');
+    break;
+  case 4:
+    console.log('Do not count on it');
+    break;
+  case 5:
+    console.log('My sources say no');
+    break;
+  case 6:
+    console.log('Outlook not so good');
+    break;
+  case 7:
+    console.log('Signs point to yes');
+    break; 
+}
+console.log(randomNumber);
